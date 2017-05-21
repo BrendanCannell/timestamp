@@ -27,4 +27,4 @@ const server = http.createServer(function (req, res) {
     res.end(JSON.stringify(output));
 });
 
-server.listen(443);
+server.listen(process.ENV.port || 5000);
