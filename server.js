@@ -26,7 +26,8 @@ const server = http.createServer(function (req, res) { /*
     
 							res.end(JSON.stringify(output)); */
 
-    res.end("test");
+    res.send("test");
+    res.end();
 });
 
 server.listen(process.env.PORT);
