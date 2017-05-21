@@ -1,7 +1,7 @@
 const http = require('https');
-const url  = require('url');
+//const url  = require('url');
 
-const server = http.createServer(function (req, res) {
+const server = http.createServer(function (req, res) { /*
     const input = decodeURIComponent(url.parse(req.url).pathname).slice(1);
     const inputIsUnixTime = input.match(/^\d*$/);
 
@@ -24,7 +24,9 @@ const server = http.createServer(function (req, res) {
 	natural: null
     };
     
-    res.end(JSON.stringify(output));
+							res.end(JSON.stringify(output)); */
+
+    res.end("test");
 });
 
-server.listen(process.env.PORT || 5000);
+server.listen(process.env.PORT);
