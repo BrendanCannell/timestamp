@@ -1,4 +1,4 @@
-const http = require('http');
+const http = require('https');
 const url  = require('url');
 
 const server = http.createServer(function (req, res) {
@@ -27,4 +27,4 @@ const server = http.createServer(function (req, res) {
     res.end(JSON.stringify(output));
 });
 
-server.listen(80);
+server.listen(443);
